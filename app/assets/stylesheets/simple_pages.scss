@@ -1,0 +1,103 @@
+// Place all the styles related to the simple_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*NAVBAR STYLES*/
+.navbar-brand {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+
+}
+
+nav {
+    background: #0B2B84;
+    box-shadow: 0 6px 14px 0 rgba(0,0,0,0.35);
+
+}
+
+nav a,
+nav p {
+    color: #A8BBEF;
+    font-size: 1.1rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    transition: 600ms ease;
+    -webkit-transition: 600ms ease;
+
+}
+
+nav a:hover, .active {
+    color: #ffcccc;
+
+}
+
+.navbarheader {
+  display: inline;
+  padding-right: 50px;
+
+}
+
+#navbarlogo {
+  height: 60px;
+  width: 110px;
+  padding-right: 20px;
+
+}
+
+#homebutton {
+  visibility: visible;
+
+}
+
+
+
+@media (max-device-width: 1080px) {
+  #homebutton {
+    visibility: hidden;
+  }
+  #navbarlogo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 60px;
+    width: 100px;
+
+  }
+  nav {
+    height: 100px;
+  }
+
+}
+/*NAVBAR STYLES END*/
+
+
+
+#indexheader {
+  padding-top: 150px;
+  font-size: 3rem;
+  text-align: center;
+
+}
+
+#buttons {
+  text-align: center;
+
+}
+
+#button1,
+#button2,
+#button3 {
+  background-color: lightblue;
+  border: solid white 6px;
+  padding: 30px 2px;
+  font-size: 2.5rem;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1.3rem;
+
+}
+
+#indexmap,
+#indexcontact {
+  background: lightblue;
+  border: solid white 6px;
+  padding: 50px 10px;
+}

@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+footer,
+footer p {
+  text-align: center;
+  align: center;
+  background: #0B2B84;
+  color: white;
+}

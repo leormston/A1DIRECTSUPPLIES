@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Aonesite</title>
+    <title>A1 Direct Supplies LTD</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="shortcut icon" href="tab_icon_fh6_icon.ico" type="image/x-icon" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   </head>
 
   <body>
+    <div data-spy="scroll" data-target=".navbar">
+      <nav class="navbar fixed-top navbar-expand-lg" role="navigation">
+        <li class="navbar-brand"><%= link_to(image_tag("A1 Direct Supplies Home.png", id: "navbarlogo"), root_path) %>> </li>
+        </a><li class="navbarheader" id="homebutton"><%= link_to "HOME", root_path %></li>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> SHOP  <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <%= link_to "CONTACT | 01773 767777", simple_pages_contact_path, class: "nav-link"%>
+            </li>
+            <li class="nav-item">
+              <%= link_to "ABOUT", simple_pages_about_path, class: "nav-link"%>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <%= yield %>
   </body>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <a href="#">Shop</a>
+        </div>
+        <div class="col-4">
+          <a href="#">About us</a>
+        </div>
+        <div class="col-4">
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <p>Website for A1 Direct Supplies LTD designed by Louie Ormston</p>
+  </footer>
 </html>
